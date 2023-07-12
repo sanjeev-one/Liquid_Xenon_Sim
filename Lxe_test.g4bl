@@ -1,0 +1,42 @@
+#	Lxe_Test.g4bl - 8 GeV electron beam bunch into a liquid xenon target
+
+# The "default" physics list is QGSP_BERT
+physics QGSP_BERT
+
+# the beam is 3 GeV kinetic energy, the mass of an electron is 0.511 MeV/c^2
+param M=0.511 KE=3000.0
+param P=sqrt(($M+$KE)*($M+$KE)-$M*$M)
+
+# zero-emittance beam is unrealistic, but simple; it easily fits through
+# a 1 mm hole in the backward detector. It emanates from z=0.
+beam gaussian meanMomentum=$P nEvents=1000 particle=e- sigmaX=6.0 sigmaY=6.0 sigmaXp=0.000100 sigmaYp=0.000100 meanMomentum=$P 
+
+
+
+  
+cylinder Target outerRadius=100 length=158 material=lXe color=1,0,0
+place Target z=1000 
+
+
+# These three virtual detectors catch everything that comes out, except for
+# a 1mm hole for the incoming beam. Note the 0.5 mm clearance at each end of
+# the target, and the 201 mm length of the cylinder to match corners.
+
+# This virtual detector catches what comes out of the target to the back;
+# note the hole for the incoming beam; make it yellow
+virtualdetector DetBackward innerRadius=0.5 radius=10000 length=1 color=1,1,0 format=ASCII
+
+place DetBackward z=-1
+
+# This virtual detector catches what comes out of the target to the side,
+# one meter away; make it blue
+virtualdetector DetSideways innerRadius=10000 radius=10001 length=2000 color=0,0,1 format=ASCII
+
+place DetSideways z=1000
+
+# This virtual detector catches what comes out of the target in the forward
+# direction; make it green
+virtualdetector DetForward radius=10000 length=1 color=0,1,0 format=ASCII
+place DetForward z=2001
+
+

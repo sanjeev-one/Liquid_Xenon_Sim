@@ -1,0 +1,12 @@
+# Set up the world
+/world/geometry 0.0m 0.0m 0.0m
+/world/dimensions 5m 5m 5m
+/world/material Vacuum
+
+# Placing a block in the world
+/block/material Iron
+/block/shape block
+/block/size 1m 1m 1m
+/block/position 0.0m 0.0m 0.0m
+
+/beamline/execute

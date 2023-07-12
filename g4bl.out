@@ -1,0 +1,146 @@
+G4BL_DIR=/Applications/G4beamline-3.08.app/Contents
+LD_LIBRARY_PATH='/Applications/G4beamline-3.08.app/Contents/lib:'
+G4LEDATA=/Users/sanjeevchauhan/Geant4Data/G4EMLOW8.0
+G4ENSDFSTATEDATA=/Users/sanjeevchauhan/Geant4Data/G4ENSDFSTATE2.3
+G4PARTICLEXSDATA=/Users/sanjeevchauhan/Geant4Data/G4PARTICLEXS4.0
+G4LEVELGAMMADATA=/Users/sanjeevchauhan/Geant4Data/PhotonEvaporation5.7
+G4RADIOACTIVEDATA=/Users/sanjeevchauhan/Geant4Data/RadioactiveDecay5.6
+G4beamline Process ID 48158
+
+*************************************************************
+ g4beamline version: 3.08                        (Oct  8 2022)
+                      Copyright : Tom Roberts, Muons, Inc.
+                        License : Gnu Public License
+                            WWW : http://g4beamline.muonsinc.com
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-02 [MT]   (25-May-2022)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+geometry                   nPoints=100 printGeometry=0 visual=0
+                           tolerance=0.002
+G4PhysListFactory::GetReferencePhysList <QGSP_BERT>  EMoption= 0
+<<< Geant4 Physics List simulation engine: QGSP_BERT
+
+
+physics      QGSP_BERT     disable= inactivate= deactivate= doStochastics=1
+                           fluct=1 minRangeCut=1 list=0 gammaToMuPair=0
+                           spinTracking=0 synchrotronRadiation=0
+                           synchrotronRadiationMuon=0 maxTime=1e+06
+param        KE            3000.0
+param        M             0.511
+param        P             3000.511
+beam    GAUSSIAN particle=e- nEvents=1000 firstEvent=-1 lastEvent=2147483647 beamX=0.0 beamY=0.0 beamZ=-3700000000000000000000.0 maxR=1000000.0 
+		meanMomentum=3000.5 weight=1.000000 
+		sigmaX=6.0 sigmaY=6.0 sigmaZ=0.0 sigmaXp=0.00010 sigmaYp=0.00010 
+		sigmaP=0.0 sigmaT=0.000 meanXp=0.00000 meanYp=0.00000 meanT=0.000 
+tubs         Target        innerRadius=0 outerRadius=100 initialPhi=0
+                           finalPhi=360 length=158 maxStep=100 material=lXe
+                           color=1,0,0 kill=0 radius=100
+place   Target  copies=1 x=0.0 y=0.0 z=1000.0 
+virtualdetector DetBackward radius=1e+04 innerRadius=0.5 height=2e+04
+                           width=2e+04 length=1 maxStep=100 material=
+                           color=1,1,0 noSingles=0 format=bltrackfile
+                           filename= file= require= referenceParticle=0
+                           coordinates=Centerline kill=0
+place   DetBackward copies=1 x=0.0 y=0.0 z=-1.0 
+virtualdetector DetSideways radius=1e+04 innerRadius=1e+04 height=2e+04
+                           width=2e+04 length=2000 maxStep=100 material=
+                           color=0,0,1 noSingles=0 format=bltrackfile
+                           filename= file= require= referenceParticle=0
+                           coordinates=Centerline kill=0
+place   DetSideways copies=1 x=0.0 y=0.0 z=1000.0 
+virtualdetector DetForward radius=1e+04 innerRadius=0 height=2e+04 width=2e+04
+                           length=1 maxStep=100 material= color=0,1,0
+                           noSingles=0 format=bltrackfile filename= file=
+                           require= referenceParticle=0 coordinates=Centerline
+                           kill=0
+place   DetForward copies=1 x=0.0 y=0.0 z=2001.0 
+
+World size (before incrementing by 201.357 mm): 20002.0 H  20002.0 W  4003.0 L
+
+PARAMETERS:
+             KE=3000.0
+              M=0.511
+              P=3000.511
+            Zcl=2001.5
+     deltaChord=3.0
+deltaIntersection=0.1
+   deltaOneStep=0.01
+         epsMax=0.05
+         epsMin=2.5e-7
+ eventTimeLimit=30
+    fieldVoxels=200,200,200
+      histoFile=g4beamline
+    histoUpdate=0
+        maxStep=100.0
+        minStep=0.01
+ steppingFormat=N GLOBAL CL KE STEP VOL PROCESS
+steppingVerbose=0
+         viewer=none
+ wallClockLimit=-1
+  worldMaterial=Vacuum
+     zTolerance=2.0
+Checking overlaps for volume Target:0 (G4Tubs) ... OK! 
+BLCMDtubs::Construct Target parent= relZ=1000.0 globZ=1000.0
+	zmin=921.0 zmax=1079.0 kill=0
+Checking overlaps for volume DetBackward:0 (G4Tubs) ... OK! 
+BLCMDvirtualdetector::Construct DetBackward parent= relZ=-1.0 globZ=-1.0
+Checking overlaps for volume DetSideways:0 (G4Tubs) ... OK! 
+BLCMDvirtualdetector::Construct DetSideways parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume DetForward:0 (G4Tubs) ... OK! 
+BLCMDvirtualdetector::Construct DetForward parent= relZ=2001.0 globZ=2001.0
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+
+Geometry test nPoints=100 tolerance=0.002 mm:
+Testing geometry for children of group 'World':
+Total geometry errors = 0  0 seconds
+
+================== Prepare Tracking Beam ==================
+Stochastic processes are enabled.
+================== Begin Tracking Beam ===============
+Event 1 Completed  1 events  realTime=1 sec  1.0 ev/sec
+Event 2 Completed  2 events  realTime=1 sec  2.0 ev/sec
+Event 3 Completed  3 events  realTime=1 sec  3.0 ev/sec
+Event 4 Completed  4 events  realTime=1 sec  4.0 ev/sec
+Event 5 Completed  5 events  realTime=1 sec  5.0 ev/sec
+Event 6 Completed  6 events  realTime=1 sec  6.0 ev/sec
+Event 7 Completed  7 events  realTime=1 sec  7.0 ev/sec
+Event 8 Completed  8 events  realTime=1 sec  8.0 ev/sec
+Event 9 Completed  9 events  realTime=1 sec  9.0 ev/sec
+Event 10 Completed  10 events  realTime=1 sec  10.0 ev/sec
+Event 20 Completed  20 events  realTime=1 sec  20.0 ev/sec
+Event 30 Completed  30 events  realTime=1 sec  30.0 ev/sec
+Event 40 Completed  40 events  realTime=2 sec  20.0 ev/sec
+Event 50 Completed  50 events  realTime=3 sec  16.7 ev/sec
+Event 60 Completed  60 events  realTime=3 sec  20.0 ev/sec
+Event 70 Completed  70 events  realTime=4 sec  17.5 ev/sec
+Event 80 Completed  80 events  realTime=4 sec  20.0 ev/sec
+Event 90 Completed  90 events  realTime=5 sec  18.0 ev/sec
+Event 100 Completed  100 events  realTime=6 sec  16.7 ev/sec
+Event 200 Completed  200 events  realTime=11 sec  18.2 ev/sec
+Event 300 Completed  300 events  realTime=17 sec  17.6 ev/sec
+Event 400 Completed  400 events  realTime=23 sec  17.4 ev/sec
+Event 500 Completed  500 events  realTime=29 sec  17.2 ev/sec
+Event 600 Completed  600 events  realTime=35 sec  17.1 ev/sec
+Event 700 Completed  700 events  realTime=41 sec  17.1 ev/sec
+Event 800 Completed  800 events  realTime=47 sec  17.0 ev/sec
+Event 900 Completed  900 events  realTime=53 sec  17.0 ev/sec
+Event 1000 Completed  1000 events  realTime=58 sec  17.2 ev/sec
+Run complete  1000 Events  58 seconds
+NTuple DetBackward        15262 entries
+NTuple DetSideways         5384 entries
+NTuple DetForward        201258 entries
+
+Exceptions: 0 Fatal, 0 Events Aborted, 0 Stuck Tracks (stopped), 0 Warnings
+g4beamline: simulation complete
