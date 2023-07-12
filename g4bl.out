@@ -5,7 +5,7 @@ G4ENSDFSTATEDATA=/Users/sanjeevchauhan/Geant4Data/G4ENSDFSTATE2.3
 G4PARTICLEXSDATA=/Users/sanjeevchauhan/Geant4Data/G4PARTICLEXS4.0
 G4LEVELGAMMADATA=/Users/sanjeevchauhan/Geant4Data/PhotonEvaporation5.7
 G4RADIOACTIVEDATA=/Users/sanjeevchauhan/Geant4Data/RadioactiveDecay5.6
-G4beamline Process ID 48158
+G4beamline Process ID 48577
 
 *************************************************************
  g4beamline version: 3.08                        (Oct  8 2022)
@@ -37,11 +37,11 @@ physics      QGSP_BERT     disable= inactivate= deactivate= doStochastics=1
                            fluct=1 minRangeCut=1 list=0 gammaToMuPair=0
                            spinTracking=0 synchrotronRadiation=0
                            synchrotronRadiationMuon=0 maxTime=1e+06
-param        KE            3000.0
+param        KE            10000.0
 param        M             0.511
-param        P             3000.511
+param        P             10000.511
 beam    GAUSSIAN particle=e- nEvents=1000 firstEvent=-1 lastEvent=2147483647 beamX=0.0 beamY=0.0 beamZ=-3700000000000000000000.0 maxR=1000000.0 
-		meanMomentum=3000.5 weight=1.000000 
+		meanMomentum=10000.5 weight=1.000000 
 		sigmaX=6.0 sigmaY=6.0 sigmaZ=0.0 sigmaXp=0.00010 sigmaYp=0.00010 
 		sigmaP=0.0 sigmaT=0.000 meanXp=0.00000 meanYp=0.00000 meanT=0.000 
 tubs         Target        innerRadius=0 outerRadius=100 initialPhi=0
@@ -50,29 +50,28 @@ tubs         Target        innerRadius=0 outerRadius=100 initialPhi=0
 place   Target  copies=1 x=0.0 y=0.0 z=1000.0 
 virtualdetector DetBackward radius=1e+04 innerRadius=0.5 height=2e+04
                            width=2e+04 length=1 maxStep=100 material=
-                           color=1,1,0 noSingles=0 format=bltrackfile
-                           filename= file= require= referenceParticle=0
-                           coordinates=Centerline kill=0
+                           color=1,1,0 noSingles=0 format= filename= file=
+                           require= referenceParticle=0 coordinates=Centerline
+                           kill=0
 place   DetBackward copies=1 x=0.0 y=0.0 z=-1.0 
 virtualdetector DetSideways radius=1e+04 innerRadius=1e+04 height=2e+04
                            width=2e+04 length=2000 maxStep=100 material=
-                           color=0,0,1 noSingles=0 format=bltrackfile
-                           filename= file= require= referenceParticle=0
-                           coordinates=Centerline kill=0
+                           color=0,0,1 noSingles=0 format= filename= file=
+                           require= referenceParticle=0 coordinates=Centerline
+                           kill=0
 place   DetSideways copies=1 x=0.0 y=0.0 z=1000.0 
 virtualdetector DetForward radius=1e+04 innerRadius=0 height=2e+04 width=2e+04
                            length=1 maxStep=100 material= color=0,1,0
-                           noSingles=0 format=bltrackfile filename= file=
-                           require= referenceParticle=0 coordinates=Centerline
-                           kill=0
+                           noSingles=0 format= filename= file= require=
+                           referenceParticle=0 coordinates=Centerline kill=0
 place   DetForward copies=1 x=0.0 y=0.0 z=2001.0 
 
 World size (before incrementing by 201.357 mm): 20002.0 H  20002.0 W  4003.0 L
 
 PARAMETERS:
-             KE=3000.0
+             KE=10000.0
               M=0.511
-              P=3000.511
+              P=10000.511
             Zcl=2001.5
      deltaChord=3.0
 deltaIntersection=0.1
@@ -119,28 +118,29 @@ Event 7 Completed  7 events  realTime=1 sec  7.0 ev/sec
 Event 8 Completed  8 events  realTime=1 sec  8.0 ev/sec
 Event 9 Completed  9 events  realTime=1 sec  9.0 ev/sec
 Event 10 Completed  10 events  realTime=1 sec  10.0 ev/sec
-Event 20 Completed  20 events  realTime=1 sec  20.0 ev/sec
-Event 30 Completed  30 events  realTime=1 sec  30.0 ev/sec
-Event 40 Completed  40 events  realTime=2 sec  20.0 ev/sec
-Event 50 Completed  50 events  realTime=3 sec  16.7 ev/sec
-Event 60 Completed  60 events  realTime=3 sec  20.0 ev/sec
-Event 70 Completed  70 events  realTime=4 sec  17.5 ev/sec
-Event 80 Completed  80 events  realTime=4 sec  20.0 ev/sec
-Event 90 Completed  90 events  realTime=5 sec  18.0 ev/sec
-Event 100 Completed  100 events  realTime=6 sec  16.7 ev/sec
-Event 200 Completed  200 events  realTime=11 sec  18.2 ev/sec
-Event 300 Completed  300 events  realTime=17 sec  17.6 ev/sec
-Event 400 Completed  400 events  realTime=23 sec  17.4 ev/sec
-Event 500 Completed  500 events  realTime=29 sec  17.2 ev/sec
-Event 600 Completed  600 events  realTime=35 sec  17.1 ev/sec
-Event 700 Completed  700 events  realTime=41 sec  17.1 ev/sec
-Event 800 Completed  800 events  realTime=47 sec  17.0 ev/sec
-Event 900 Completed  900 events  realTime=53 sec  17.0 ev/sec
-Event 1000 Completed  1000 events  realTime=58 sec  17.2 ev/sec
-Run complete  1000 Events  58 seconds
-NTuple DetBackward        15262 entries
-NTuple DetSideways         5384 entries
-NTuple DetForward        201258 entries
+Event 20 Completed  20 events  realTime=3 sec  6.7 ev/sec
+Event 30 Completed  30 events  realTime=4 sec  7.5 ev/sec
+Event 40 Completed  40 events  realTime=5 sec  8.0 ev/sec
+Event 50 Completed  50 events  realTime=7 sec  7.1 ev/sec
+Event 60 Completed  60 events  realTime=8 sec  7.5 ev/sec
+Event 70 Completed  70 events  realTime=9 sec  7.8 ev/sec
+Event 80 Completed  80 events  realTime=10 sec  8.0 ev/sec
+Event 90 Completed  90 events  realTime=12 sec  7.5 ev/sec
+Event 100 Completed  100 events  realTime=13 sec  7.7 ev/sec
+Event 200 Completed  200 events  realTime=26 sec  7.7 ev/sec
+Event 300 Completed  300 events  realTime=40 sec  7.5 ev/sec
+Event 400 Completed  400 events  realTime=52 sec  7.7 ev/sec
+Event 500 Completed  500 events  realTime=65 sec  7.7 ev/sec
+Event 600 Completed  600 events  realTime=78 sec  7.7 ev/sec
+Event 700 Completed  700 events  realTime=90 sec  7.8 ev/sec
+Event 800 Completed  800 events  realTime=104 sec  7.7 ev/sec
+Event 900 Completed  900 events  realTime=117 sec  7.7 ev/sec
+Event 1000 Completed  1000 events  realTime=130 sec  7.7 ev/sec
+Run complete  1000 Events  130 seconds
+NTuple DetBackward        31243 entries
+NTuple DetSideways        11501 entries
+NTuple DetForward        546368 entries
+NTuple wrote Root File 'g4beamline.root'
 
 Exceptions: 0 Fatal, 0 Events Aborted, 0 Stuck Tracks (stopped), 0 Warnings
 g4beamline: simulation complete
