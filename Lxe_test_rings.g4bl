@@ -1,0 +1,511 @@
+#	Lxe_Test.g4bl - 10 GeV electron beam bunch into a liquid xenon target
+/global/fieldMgr/eventTimeLimit 10000 s
+
+# The "default" physics list is QGSP
+physics QGSP
+
+# the beam is 10 GeV kinetic energy, the mass of an electron is 0.511 MeV/c^2
+param M=0.511 KE=10000.0
+param P=sqrt(($M+$KE)*($M+$KE)-$M*$M)
+
+# zero-emittance beam is unrealistic, but simple; it easily fits through
+# a 1 mm hole in the backward detector. It emanates from z=0.
+beam gaussian meanMomentum=$P nEvents=1000 particle=e- sigmaX=6.0 sigmaY=6.0 sigmaXp=0.000100 sigmaYp=0.000100 meanMomentum=$P 
+
+# Detector setup
+detector Det innerRadius=0.0 radius=3.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=3.2 radius=4.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=4.5 radius=5.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=5.5 radius=6.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=6.3 radius=7.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=7.1 radius=7.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=7.8 radius=8.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=8.4 radius=9.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=9.0 radius=9.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=9.5 radius=10.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=10.0 radius=10.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=10.5 radius=11.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=11.0 radius=11.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=11.4 radius=11.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=11.9 radius=12.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=12.3 radius=12.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=12.7 radius=13.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=13.1 radius=13.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=13.5 radius=13.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=13.8 radius=14.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=14.2 radius=14.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=14.5 radius=14.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=14.9 radius=15.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=15.2 radius=15.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=15.5 radius=15.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=15.9 radius=16.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=16.2 radius=16.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=16.5 radius=16.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=16.8 radius=17.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=17.1 radius=17.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=17.4 radius=17.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=17.7 radius=18.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=18.0 radius=18.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=18.2 radius=18.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=18.5 radius=18.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=18.8 radius=19.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=19.0 radius=19.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=19.3 radius=19.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=19.6 radius=19.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=19.8 radius=20.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=20.1 radius=20.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=20.3 radius=20.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=20.6 radius=20.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=20.8 radius=21.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=21.1 radius=21.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=21.3 radius=21.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=21.5 radius=21.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=21.8 radius=22.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=22.0 radius=22.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=22.2 radius=22.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=22.4 radius=22.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=22.7 radius=22.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=22.9 radius=23.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=23.1 radius=23.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=23.3 radius=23.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=23.5 radius=23.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=23.8 radius=24.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=24.0 radius=24.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=24.2 radius=24.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=24.4 radius=24.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=24.6 radius=24.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=24.8 radius=25.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=25.0 radius=25.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=25.2 radius=25.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=25.4 radius=25.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=25.6 radius=25.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=25.8 radius=26.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=26.0 radius=26.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=26.2 radius=26.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=26.4 radius=26.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=26.6 radius=26.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=26.7 radius=26.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=26.9 radius=27.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=27.1 radius=27.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=27.3 radius=27.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=27.5 radius=27.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=27.7 radius=27.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=27.9 radius=28.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=28.0 radius=28.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=28.2 radius=28.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=28.4 radius=28.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=28.6 radius=28.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=28.7 radius=28.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=28.9 radius=29.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=29.1 radius=29.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=29.3 radius=29.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=29.4 radius=29.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=29.6 radius=29.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=29.8 radius=29.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=29.9 radius=30.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=30.1 radius=30.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=30.3 radius=30.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=30.4 radius=30.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=30.6 radius=30.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=30.8 radius=30.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=30.9 radius=31.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=31.1 radius=31.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=31.3 radius=31.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=31.4 radius=31.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=31.6 radius=31.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=31.7 radius=31.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=31.9 radius=32.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=32.1 radius=32.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=32.2 radius=32.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=32.4 radius=32.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=32.5 radius=32.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=32.7 radius=32.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=32.8 radius=33.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.0 radius=33.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.1 radius=33.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.3 radius=33.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.4 radius=33.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.6 radius=33.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.7 radius=33.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=33.9 radius=34.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.0 radius=34.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.2 radius=34.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.3 radius=34.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.5 radius=34.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.6 radius=34.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.8 radius=34.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=34.9 radius=35.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.1 radius=35.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.2 radius=35.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.3 radius=35.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.5 radius=35.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.6 radius=35.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.8 radius=35.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=35.9 radius=36.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.0 radius=36.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.2 radius=36.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.3 radius=36.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.5 radius=36.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.6 radius=36.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.7 radius=36.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=36.9 radius=37.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.0 radius=37.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.1 radius=37.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.3 radius=37.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.4 radius=37.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.6 radius=37.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.7 radius=37.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=37.8 radius=38.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.0 radius=38.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.1 radius=38.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.2 radius=38.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.3 radius=38.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.5 radius=38.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.6 radius=38.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.7 radius=38.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=38.9 radius=39.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.0 radius=39.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.1 radius=39.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.3 radius=39.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.4 radius=39.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.5 radius=39.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.6 radius=39.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.8 radius=39.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=39.9 radius=40.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.0 radius=40.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.1 radius=40.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.3 radius=40.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.4 radius=40.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.5 radius=40.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.6 radius=40.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.8 radius=40.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=40.9 radius=41.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.0 radius=41.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.1 radius=41.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.3 radius=41.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.4 radius=41.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.5 radius=41.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.6 radius=41.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.7 radius=41.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=41.9 radius=42.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.0 radius=42.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.1 radius=42.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.2 radius=42.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.3 radius=42.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.5 radius=42.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.6 radius=42.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.7 radius=42.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.8 radius=42.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=42.9 radius=43.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.1 radius=43.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.2 radius=43.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.3 radius=43.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.4 radius=43.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.5 radius=43.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.6 radius=43.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.7 radius=43.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=43.9 radius=44.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.0 radius=44.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.1 radius=44.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.2 radius=44.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.3 radius=44.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.4 radius=44.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.5 radius=44.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.7 radius=44.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.8 radius=44.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=44.9 radius=45.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.0 radius=45.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.1 radius=45.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.2 radius=45.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.3 radius=45.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.4 radius=45.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.6 radius=45.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.7 radius=45.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.8 radius=45.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=45.9 radius=46.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.0 radius=46.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.1 radius=46.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.2 radius=46.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.3 radius=46.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.4 radius=46.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.5 radius=46.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.6 radius=46.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.8 radius=46.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=46.9 radius=47.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.0 radius=47.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.1 radius=47.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.2 radius=47.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.3 radius=47.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.4 radius=47.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.5 radius=47.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.6 radius=47.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.7 radius=47.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.8 radius=47.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=47.9 radius=48.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.0 radius=48.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.1 radius=48.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.2 radius=48.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.3 radius=48.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.4 radius=48.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.6 radius=48.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.7 radius=48.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.8 radius=48.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=48.9 radius=49.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.0 radius=49.1 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.1 radius=49.2 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.2 radius=49.3 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.3 radius=49.4 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.4 radius=49.5 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.5 radius=49.6 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.6 radius=49.7 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.7 radius=49.8 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.8 radius=49.9 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
+detector Det innerRadius=49.9 radius=50.0 length=158.0 material=lXe color=1,0,0 format=ASCII
+place Det z=1000 rename=Det#
