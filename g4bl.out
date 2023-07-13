@@ -5,7 +5,7 @@ G4ENSDFSTATEDATA=/Users/sanjeevchauhan/Geant4Data/G4ENSDFSTATE2.3
 G4PARTICLEXSDATA=/Users/sanjeevchauhan/Geant4Data/G4PARTICLEXS4.0
 G4LEVELGAMMADATA=/Users/sanjeevchauhan/Geant4Data/PhotonEvaporation5.7
 G4RADIOACTIVEDATA=/Users/sanjeevchauhan/Geant4Data/RadioactiveDecay5.6
-G4beamline Process ID 50248
+G4beamline Process ID 51304
 
 *************************************************************
  g4beamline version: 3.08                        (Oct  8 2022)
@@ -2064,278 +2064,283 @@ Total geometry errors = 0  0 seconds
 ================== Prepare Tracking Beam ==================
 Stochastic processes are enabled.
 ================== Begin Tracking Beam ===============
-**************************************************************************
-*** G4Exception: Signal 15 received
-***    severity: Fatal Exception
-***   issued by: BLManager
-***     EventID: 1     TrackID: 32510   gamma  KE=0.6971 MeV
-**************************************************************************
-g4beamline: attempting to close up after fatal G4Exception...
-NTuple Det1                   0 entries
-NTuple Det2                   0 entries
-NTuple Det3                   0 entries
-NTuple Det4                   0 entries
-NTuple Det5                   0 entries
-NTuple Det6                   0 entries
-NTuple Det7                   0 entries
-NTuple Det8                   0 entries
-NTuple Det9                   0 entries
-NTuple Det10                  0 entries
-NTuple Det11                  0 entries
-NTuple Det12                  0 entries
-NTuple Det13                  0 entries
-NTuple Det14                  0 entries
-NTuple Det15                  0 entries
-NTuple Det16                  0 entries
-NTuple Det17                  0 entries
-NTuple Det18                  0 entries
-NTuple Det19                  0 entries
-NTuple Det20                  0 entries
-NTuple Det21                  0 entries
-NTuple Det22                  0 entries
-NTuple Det23                  0 entries
-NTuple Det24                  0 entries
-NTuple Det25                  0 entries
-NTuple Det26                  0 entries
-NTuple Det27                  0 entries
-NTuple Det28                  0 entries
-NTuple Det29                  0 entries
-NTuple Det30                  0 entries
-NTuple Det31                  0 entries
-NTuple Det32                  0 entries
-NTuple Det33                  0 entries
-NTuple Det34                  0 entries
-NTuple Det35                  0 entries
-NTuple Det36                  0 entries
-NTuple Det37                  0 entries
-NTuple Det38                  0 entries
-NTuple Det39                  0 entries
-NTuple Det40                  0 entries
-NTuple Det41                  0 entries
-NTuple Det42                  0 entries
-NTuple Det43                  0 entries
-NTuple Det44                  0 entries
-NTuple Det45                  0 entries
-NTuple Det46                  0 entries
-NTuple Det47                  0 entries
-NTuple Det48                  0 entries
-NTuple Det49                  0 entries
-NTuple Det50                  0 entries
-NTuple Det51                  0 entries
-NTuple Det52                  0 entries
-NTuple Det53                  0 entries
-NTuple Det54                  0 entries
-NTuple Det55                  0 entries
-NTuple Det56                  0 entries
-NTuple Det57                  0 entries
-NTuple Det58                  0 entries
-NTuple Det59                  0 entries
-NTuple Det60                  0 entries
-NTuple Det61                  0 entries
-NTuple Det62                  0 entries
-NTuple Det63                  0 entries
-NTuple Det64                  0 entries
-NTuple Det65                  0 entries
-NTuple Det66                  0 entries
-NTuple Det67                  0 entries
-NTuple Det68                  0 entries
-NTuple Det69                  0 entries
-NTuple Det70                  0 entries
-NTuple Det71                  0 entries
-NTuple Det72                  0 entries
-NTuple Det73                  0 entries
-NTuple Det74                  0 entries
-NTuple Det75                  0 entries
-NTuple Det76                  0 entries
-NTuple Det77                  0 entries
-NTuple Det78                  0 entries
-NTuple Det79                  0 entries
-NTuple Det80                  0 entries
-NTuple Det81                  0 entries
-NTuple Det82                  0 entries
-NTuple Det83                  0 entries
-NTuple Det84                  0 entries
-NTuple Det85                  0 entries
-NTuple Det86                  0 entries
-NTuple Det87                  0 entries
-NTuple Det88                  0 entries
-NTuple Det89                  0 entries
-NTuple Det90                  0 entries
-NTuple Det91                  0 entries
-NTuple Det92                  0 entries
-NTuple Det93                  0 entries
-NTuple Det94                  0 entries
-NTuple Det95                  0 entries
-NTuple Det96                  0 entries
-NTuple Det97                  0 entries
-NTuple Det98                  0 entries
-NTuple Det99                  0 entries
-NTuple Det100                 0 entries
-NTuple Det101                 0 entries
-NTuple Det102                 0 entries
-NTuple Det103                 0 entries
-NTuple Det104                 0 entries
-NTuple Det105                 0 entries
-NTuple Det106                 0 entries
-NTuple Det107                 0 entries
-NTuple Det108                 0 entries
-NTuple Det109                 0 entries
-NTuple Det110                 0 entries
-NTuple Det111                 0 entries
-NTuple Det112                 0 entries
-NTuple Det113                 0 entries
-NTuple Det114                 0 entries
-NTuple Det115                 0 entries
-NTuple Det116                 0 entries
-NTuple Det117                 0 entries
-NTuple Det118                 0 entries
-NTuple Det119                 0 entries
-NTuple Det120                 0 entries
-NTuple Det121                 0 entries
-NTuple Det122                 0 entries
-NTuple Det123                 0 entries
-NTuple Det124                 0 entries
-NTuple Det125                 0 entries
-NTuple Det126                 0 entries
-NTuple Det127                 0 entries
-NTuple Det128                 0 entries
-NTuple Det129                 0 entries
-NTuple Det130                 0 entries
-NTuple Det131                 0 entries
-NTuple Det132                 0 entries
-NTuple Det133                 0 entries
-NTuple Det134                 0 entries
-NTuple Det135                 0 entries
-NTuple Det136                 0 entries
-NTuple Det137                 0 entries
-NTuple Det138                 0 entries
-NTuple Det139                 0 entries
-NTuple Det140                 0 entries
-NTuple Det141                 0 entries
-NTuple Det142                 0 entries
-NTuple Det143                 0 entries
-NTuple Det144                 0 entries
-NTuple Det145                 0 entries
-NTuple Det146                 0 entries
-NTuple Det147                 0 entries
-NTuple Det148                 0 entries
-NTuple Det149                 0 entries
-NTuple Det150                 0 entries
-NTuple Det151                 0 entries
-NTuple Det152                 0 entries
-NTuple Det153                 0 entries
-NTuple Det154                 0 entries
-NTuple Det155                 0 entries
-NTuple Det156                 0 entries
-NTuple Det157                 0 entries
-NTuple Det158                 0 entries
-NTuple Det159                 0 entries
-NTuple Det160                 0 entries
-NTuple Det161                 0 entries
-NTuple Det162                 0 entries
-NTuple Det163                 0 entries
-NTuple Det164                 0 entries
-NTuple Det165                 0 entries
-NTuple Det166                 0 entries
-NTuple Det167                 0 entries
-NTuple Det168                 0 entries
-NTuple Det169                 0 entries
-NTuple Det170                 0 entries
-NTuple Det171                 0 entries
-NTuple Det172                 0 entries
-NTuple Det173                 0 entries
-NTuple Det174                 0 entries
-NTuple Det175                 0 entries
-NTuple Det176                 0 entries
-NTuple Det177                 0 entries
-NTuple Det178                 0 entries
-NTuple Det179                 0 entries
-NTuple Det180                 0 entries
-NTuple Det181                 0 entries
-NTuple Det182                 0 entries
-NTuple Det183                 0 entries
-NTuple Det184                 0 entries
-NTuple Det185                 0 entries
-NTuple Det186                 0 entries
-NTuple Det187                 0 entries
-NTuple Det188                 0 entries
-NTuple Det189                 0 entries
-NTuple Det190                 0 entries
-NTuple Det191                 0 entries
-NTuple Det192                 0 entries
-NTuple Det193                 0 entries
-NTuple Det194                 0 entries
-NTuple Det195                 0 entries
-NTuple Det196                 0 entries
-NTuple Det197                 0 entries
-NTuple Det198                 0 entries
-NTuple Det199                 0 entries
-NTuple Det200                 0 entries
-NTuple Det201                 0 entries
-NTuple Det202                 0 entries
-NTuple Det203                 0 entries
-NTuple Det204                 0 entries
-NTuple Det205                 0 entries
-NTuple Det206                 0 entries
-NTuple Det207                 0 entries
-NTuple Det208                 0 entries
-NTuple Det209                 0 entries
-NTuple Det210                 0 entries
-NTuple Det211                 0 entries
-NTuple Det212                 0 entries
-NTuple Det213                 0 entries
-NTuple Det214                 0 entries
-NTuple Det215                 0 entries
-NTuple Det216                 0 entries
-NTuple Det217                 0 entries
-NTuple Det218                 0 entries
-NTuple Det219                 0 entries
-NTuple Det220                 0 entries
-NTuple Det221                 0 entries
-NTuple Det222                 0 entries
-NTuple Det223                 0 entries
-NTuple Det224                 0 entries
-NTuple Det225                 0 entries
-NTuple Det226                 0 entries
-NTuple Det227                 0 entries
-NTuple Det228                 0 entries
-NTuple Det229                 0 entries
-NTuple Det230                 0 entries
-NTuple Det231                 0 entries
-NTuple Det232                 0 entries
-NTuple Det233                 0 entries
-NTuple Det234                 0 entries
-NTuple Det235                 0 entries
-NTuple Det236                 0 entries
-NTuple Det237                 0 entries
-NTuple Det238                 0 entries
-NTuple Det239                 0 entries
-NTuple Det240                 0 entries
-NTuple Det241                 0 entries
-NTuple Det242                 0 entries
-NTuple Det243                 0 entries
-NTuple Det244                 0 entries
-NTuple Det245                 0 entries
-NTuple Det246                 0 entries
-NTuple Det247                 0 entries
-NTuple Det248                 0 entries
+Event 1 Completed  1 events  realTime=2 sec  0.5 ev/sec
+Event 2 Completed  2 events  realTime=4 sec  0.5 ev/sec
+Event 3 Completed  3 events  realTime=5 sec  0.6 ev/sec
+Event 4 Completed  4 events  realTime=7 sec  0.6 ev/sec
+Event 5 Completed  5 events  realTime=8 sec  0.6 ev/sec
+Event 6 Completed  6 events  realTime=10 sec  0.6 ev/sec
+Event 7 Completed  7 events  realTime=11 sec  0.6 ev/sec
+Event 8 Completed  8 events  realTime=12 sec  0.7 ev/sec
+Event 9 Completed  9 events  realTime=14 sec  0.6 ev/sec
+Event 10 Completed  10 events  realTime=15 sec  0.7 ev/sec
+Event 20 Completed  20 events  realTime=29 sec  0.7 ev/sec
+Event 30 Completed  30 events  realTime=43 sec  0.7 ev/sec
+Event 40 Completed  40 events  realTime=56 sec  0.7 ev/sec
+Event 50 Completed  50 events  realTime=70 sec  0.7 ev/sec
+Event 60 Completed  60 events  realTime=82 sec  0.7 ev/sec
+Event 70 Completed  70 events  realTime=94 sec  0.7 ev/sec
+Event 80 Completed  80 events  realTime=109 sec  0.7 ev/sec
+Event 90 Completed  90 events  realTime=122 sec  0.7 ev/sec
+Event 100 Completed  100 events  realTime=136 sec  0.7 ev/sec
+Event 200 Completed  200 events  realTime=262 sec  0.8 ev/sec
+Event 300 Completed  300 events  realTime=397 sec  0.8 ev/sec
+Event 400 Completed  400 events  realTime=520 sec  0.8 ev/sec
+Event 500 Completed  500 events  realTime=642 sec  0.8 ev/sec
+Event 600 Completed  600 events  realTime=769 sec  0.8 ev/sec
+Event 700 Completed  700 events  realTime=898 sec  0.8 ev/sec
+Event 800 Completed  800 events  realTime=1027 sec  0.8 ev/sec
+Event 900 Completed  900 events  realTime=1160 sec  0.8 ev/sec
+Event 1000 Completed  1000 events  realTime=1288 sec  0.8 ev/sec
+Run complete  1000 Events  1288 seconds
+NTuple Det1                1000 entries
+NTuple Det2                1000 entries
+NTuple Det3                1000 entries
+NTuple Det4                1000 entries
+NTuple Det5                1000 entries
+NTuple Det6                1000 entries
+NTuple Det7                1000 entries
+NTuple Det8                1000 entries
+NTuple Det9                1000 entries
+NTuple Det10               1000 entries
+NTuple Det11               1000 entries
+NTuple Det12               1000 entries
+NTuple Det13               1000 entries
+NTuple Det14               1000 entries
+NTuple Det15               1000 entries
+NTuple Det16               1000 entries
+NTuple Det17               1000 entries
+NTuple Det18               1000 entries
+NTuple Det19               1000 entries
+NTuple Det20               1000 entries
+NTuple Det21               1000 entries
+NTuple Det22               1000 entries
+NTuple Det23               1000 entries
+NTuple Det24               1000 entries
+NTuple Det25               1000 entries
+NTuple Det26               1000 entries
+NTuple Det27               1000 entries
+NTuple Det28               1000 entries
+NTuple Det29               1000 entries
+NTuple Det30               1000 entries
+NTuple Det31               1000 entries
+NTuple Det32               1000 entries
+NTuple Det33               1000 entries
+NTuple Det34               1000 entries
+NTuple Det35               1000 entries
+NTuple Det36               1000 entries
+NTuple Det37               1000 entries
+NTuple Det38               1000 entries
+NTuple Det39               1000 entries
+NTuple Det40               1000 entries
+NTuple Det41               1000 entries
+NTuple Det42               1000 entries
+NTuple Det43               1000 entries
+NTuple Det44               1000 entries
+NTuple Det45               1000 entries
+NTuple Det46               1000 entries
+NTuple Det47               1000 entries
+NTuple Det48               1000 entries
+NTuple Det49               1000 entries
+NTuple Det50               1000 entries
+NTuple Det51               1000 entries
+NTuple Det52               1000 entries
+NTuple Det53               1000 entries
+NTuple Det54               1000 entries
+NTuple Det55               1000 entries
+NTuple Det56               1000 entries
+NTuple Det57               1000 entries
+NTuple Det58               1000 entries
+NTuple Det59               1000 entries
+NTuple Det60               1000 entries
+NTuple Det61               1000 entries
+NTuple Det62               1000 entries
+NTuple Det63               1000 entries
+NTuple Det64               1000 entries
+NTuple Det65               1000 entries
+NTuple Det66               1000 entries
+NTuple Det67               1000 entries
+NTuple Det68               1000 entries
+NTuple Det69               1000 entries
+NTuple Det70               1000 entries
+NTuple Det71               1000 entries
+NTuple Det72               1000 entries
+NTuple Det73               1000 entries
+NTuple Det74               1000 entries
+NTuple Det75               1000 entries
+NTuple Det76               1000 entries
+NTuple Det77               1000 entries
+NTuple Det78               1000 entries
+NTuple Det79               1000 entries
+NTuple Det80               1000 entries
+NTuple Det81               1000 entries
+NTuple Det82               1000 entries
+NTuple Det83               1000 entries
+NTuple Det84               1000 entries
+NTuple Det85               1000 entries
+NTuple Det86               1000 entries
+NTuple Det87               1000 entries
+NTuple Det88               1000 entries
+NTuple Det89               1000 entries
+NTuple Det90               1000 entries
+NTuple Det91               1000 entries
+NTuple Det92               1000 entries
+NTuple Det93               1000 entries
+NTuple Det94               1000 entries
+NTuple Det95               1000 entries
+NTuple Det96               1000 entries
+NTuple Det97               1000 entries
+NTuple Det98               1000 entries
+NTuple Det99               1000 entries
+NTuple Det100              1000 entries
+NTuple Det101              1000 entries
+NTuple Det102              1000 entries
+NTuple Det103              1000 entries
+NTuple Det104              1000 entries
+NTuple Det105              1000 entries
+NTuple Det106              1000 entries
+NTuple Det107              1000 entries
+NTuple Det108              1000 entries
+NTuple Det109              1000 entries
+NTuple Det110              1000 entries
+NTuple Det111              1000 entries
+NTuple Det112              1000 entries
+NTuple Det113              1000 entries
+NTuple Det114              1000 entries
+NTuple Det115              1000 entries
+NTuple Det116              1000 entries
+NTuple Det117              1000 entries
+NTuple Det118              1000 entries
+NTuple Det119              1000 entries
+NTuple Det120              1000 entries
+NTuple Det121              1000 entries
+NTuple Det122              1000 entries
+NTuple Det123              1000 entries
+NTuple Det124              1000 entries
+NTuple Det125              1000 entries
+NTuple Det126              1000 entries
+NTuple Det127              1000 entries
+NTuple Det128              1000 entries
+NTuple Det129              1000 entries
+NTuple Det130              1000 entries
+NTuple Det131              1000 entries
+NTuple Det132              1000 entries
+NTuple Det133              1000 entries
+NTuple Det134              1000 entries
+NTuple Det135              1000 entries
+NTuple Det136              1000 entries
+NTuple Det137              1000 entries
+NTuple Det138              1000 entries
+NTuple Det139              1000 entries
+NTuple Det140              1000 entries
+NTuple Det141              1000 entries
+NTuple Det142              1000 entries
+NTuple Det143              1000 entries
+NTuple Det144              1000 entries
+NTuple Det145              1000 entries
+NTuple Det146              1000 entries
+NTuple Det147              1000 entries
+NTuple Det148              1000 entries
+NTuple Det149              1000 entries
+NTuple Det150              1000 entries
+NTuple Det151              1000 entries
+NTuple Det152              1000 entries
+NTuple Det153              1000 entries
+NTuple Det154              1000 entries
+NTuple Det155              1000 entries
+NTuple Det156              1000 entries
+NTuple Det157              1000 entries
+NTuple Det158              1000 entries
+NTuple Det159              1000 entries
+NTuple Det160              1000 entries
+NTuple Det161              1000 entries
+NTuple Det162              1000 entries
+NTuple Det163              1000 entries
+NTuple Det164              1000 entries
+NTuple Det165              1000 entries
+NTuple Det166              1000 entries
+NTuple Det167              1000 entries
+NTuple Det168              1000 entries
+NTuple Det169              1000 entries
+NTuple Det170              1000 entries
+NTuple Det171              1000 entries
+NTuple Det172              1000 entries
+NTuple Det173              1000 entries
+NTuple Det174              1000 entries
+NTuple Det175              1000 entries
+NTuple Det176              1000 entries
+NTuple Det177              1000 entries
+NTuple Det178              1000 entries
+NTuple Det179              1000 entries
+NTuple Det180              1000 entries
+NTuple Det181              1000 entries
+NTuple Det182              1000 entries
+NTuple Det183              1000 entries
+NTuple Det184              1000 entries
+NTuple Det185              1000 entries
+NTuple Det186              1000 entries
+NTuple Det187              1000 entries
+NTuple Det188              1000 entries
+NTuple Det189              1000 entries
+NTuple Det190              1000 entries
+NTuple Det191              1000 entries
+NTuple Det192              1000 entries
+NTuple Det193              1000 entries
+NTuple Det194              1000 entries
+NTuple Det195              1000 entries
+NTuple Det196              1000 entries
+NTuple Det197              1000 entries
+NTuple Det198              1000 entries
+NTuple Det199              1000 entries
+NTuple Det200              1000 entries
+NTuple Det201              1000 entries
+NTuple Det202              1000 entries
+NTuple Det203              1000 entries
+NTuple Det204              1000 entries
+NTuple Det205              1000 entries
+NTuple Det206              1000 entries
+NTuple Det207              1000 entries
+NTuple Det208              1000 entries
+NTuple Det209              1000 entries
+NTuple Det210              1000 entries
+NTuple Det211              1000 entries
+NTuple Det212              1000 entries
+NTuple Det213              1000 entries
+NTuple Det214              1000 entries
+NTuple Det215              1000 entries
+NTuple Det216              1000 entries
+NTuple Det217              1000 entries
+NTuple Det218              1000 entries
+NTuple Det219              1000 entries
+NTuple Det220              1000 entries
+NTuple Det221              1000 entries
+NTuple Det222              1000 entries
+NTuple Det223              1000 entries
+NTuple Det224              1000 entries
+NTuple Det225              1000 entries
+NTuple Det226              1000 entries
+NTuple Det227              1000 entries
+NTuple Det228              1000 entries
+NTuple Det229              1000 entries
+NTuple Det230              1000 entries
+NTuple Det231              1000 entries
+NTuple Det232              1000 entries
+NTuple Det233              1000 entries
+NTuple Det234              1000 entries
+NTuple Det235              1000 entries
+NTuple Det236              1000 entries
+NTuple Det237              1000 entries
+NTuple Det238              1000 entries
+NTuple Det239              1000 entries
+NTuple Det240              1000 entries
+NTuple Det241              1000 entries
+NTuple Det242              1000 entries
+NTuple Det243              1000 entries
+NTuple Det244              1000 entries
+NTuple Det245              1000 entries
+NTuple Det246              1000 entries
+NTuple Det247              1000 entries
+NTuple Det248              1000 entries
 
-Exceptions: 1 Fatal, 0 Events Aborted, 0 Stuck Tracks (stopped), 0 Warnings
-      1 times: Signal 15 received
-g4beamline: simulation aborted
-
-Stack Trace for signal 15:
-0          0x104833464  g4bl  BLSignal::sighandler(int) + 100
-1       0x7ff809281c1d  libsystem_platform.dylib  _sigtramp + 29
-2   0x400c9c958b329c79  ???  ??? + 0
-3          0x104aec741  g4bl  G4SteppingManager::InvokePSDIP(unsigned long) + 65
-4          0x104aec63b  g4bl  G4SteppingManager::InvokePostStepDoItProcs() + 139
-5          0x104ae9f53  g4bl  G4SteppingManager::Stepping() + 579
-6          0x104afd32f  g4bl  G4TrackingManager::ProcessOneTrack(G4Track*) + 447
-7          0x104a8a57d  g4bl  G4EventManager::DoProcessing(G4Event*) + 2285
-8          0x104831dc2  g4bl  BLRunManager::DoEventLoop(int, char const*, int) + 226
-9          0x104a52422  g4bl  G4RunManager::BeamOn(int, char const*, int) + 98
-10         0x10481ec4c  g4bl  BLManager::trackBeam() + 204
-11         0x1048426b1  g4bl  main + 5009
-12         0x206a3d310  ???  ??? + 0
-
+Exceptions: 0 Fatal, 0 Events Aborted, 0 Stuck Tracks (stopped), 0 Warnings
+g4beamline: simulation complete
