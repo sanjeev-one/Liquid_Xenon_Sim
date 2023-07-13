@@ -15,7 +15,7 @@ beam gaussian meanMomentum=$P nEvents=1000 particle=e- sigmaX=6.0 sigmaY=6.0 sig
 
   
 
-detector Det radius=100 length=15.8 material=lXe color=1,0,0 format=ASCII 
+detector Det radius=50 length=15.8 material=lXe color=1,0,0 format=ASCII 
 
 
 place Det z=1000.0 rename=Det#
