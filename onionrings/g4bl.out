@@ -1,0 +1,2166 @@
+G4BL_DIR=/Applications/G4beamline-3.08.app/Contents
+LD_LIBRARY_PATH='/Applications/G4beamline-3.08.app/Contents/lib:'
+G4LEDATA=/Users/sanjeevchauhan/Geant4Data/G4EMLOW8.0
+G4ENSDFSTATEDATA=/Users/sanjeevchauhan/Geant4Data/G4ENSDFSTATE2.3
+G4PARTICLEXSDATA=/Users/sanjeevchauhan/Geant4Data/G4PARTICLEXS4.0
+G4LEVELGAMMADATA=/Users/sanjeevchauhan/Geant4Data/PhotonEvaporation5.7
+G4RADIOACTIVEDATA=/Users/sanjeevchauhan/Geant4Data/RadioactiveDecay5.6
+G4beamline Process ID 75034
+
+*************************************************************
+ g4beamline version: 3.08                        (Oct  8 2022)
+                      Copyright : Tom Roberts, Muons, Inc.
+                        License : Gnu Public License
+                            WWW : http://g4beamline.muonsinc.com
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-02 [MT]   (25-May-2022)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+param        viewer        best,1
+geometry                   nPoints=100 printGeometry=0 visual=0
+                           tolerance=0.002
+/global/fieldMgr/eventTimeLimit 10000 s
+Physics list QGSP is obsolete, replaced by FTFP_BERT
+G4PhysListFactory::GetReferencePhysList <FTFP_BERT>  EMoption= 0
+<<< Geant4 Physics List simulation engine: FTFP_BERT
+
+
+physics      FTFP_BERT     disable= inactivate= deactivate= doStochastics=1
+                           fluct=1 minRangeCut=1 list=0 gammaToMuPair=0
+                           spinTracking=0 synchrotronRadiation=0
+                           synchrotronRadiationMuon=0 maxTime=1e+06
+param        KE            10000.0
+param        M             0.511
+param        P             10000.511
+beam    GAUSSIAN particle=e- nEvents=1000 firstEvent=-1 lastEvent=2147483647 beamX=0.0 beamY=0.0 beamZ=-3700000000000000000000.0 maxR=1000000.0 
+		meanMomentum=10000.5 weight=1.000000 
+		sigmaX=6.0 sigmaY=6.0 sigmaZ=0.0 sigmaXp=0.00010 sigmaYp=0.00010 
+		sigmaP=0.0 sigmaT=0.000 meanXp=0.00000 meanYp=0.00000 meanT=0.000 
+detector     Det           radius=3.2 innerRadius=0 height=6.4 width=6.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=4.5 innerRadius=3.2 height=9 width=9
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=5.5 innerRadius=4.5 height=11 width=11
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=6.3 innerRadius=5.5 height=12.6 width=12.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=7.1 innerRadius=6.3 height=14.2 width=14.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=7.8 innerRadius=7.1 height=15.6 width=15.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=8.4 innerRadius=7.8 height=16.8 width=16.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=9 innerRadius=8.4 height=18 width=18
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=9.5 innerRadius=9 height=19 width=19
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=10 innerRadius=9.5 height=20 width=20
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=10.5 innerRadius=10 height=21 width=21
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=11 innerRadius=10.5 height=22 width=22
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=11.4 innerRadius=11 height=22.8 width=22.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=11.9 innerRadius=11.4 height=23.8 width=23.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=12.3 innerRadius=11.9 height=24.6 width=24.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=12.7 innerRadius=12.3 height=25.4 width=25.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=13.1 innerRadius=12.7 height=26.2 width=26.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=13.5 innerRadius=13.1 height=27 width=27
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=13.8 innerRadius=13.5 height=27.6 width=27.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=14.2 innerRadius=13.8 height=28.4 width=28.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=14.5 innerRadius=14.2 height=29 width=29
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=14.9 innerRadius=14.5 height=29.8 width=29.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=15.2 innerRadius=14.9 height=30.4 width=30.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=15.5 innerRadius=15.2 height=31 width=31
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=15.9 innerRadius=15.5 height=31.8 width=31.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=16.2 innerRadius=15.9 height=32.4 width=32.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=16.5 innerRadius=16.2 height=33 width=33
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=16.8 innerRadius=16.5 height=33.6 width=33.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=17.1 innerRadius=16.8 height=34.2 width=34.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=17.4 innerRadius=17.1 height=34.8 width=34.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=17.7 innerRadius=17.4 height=35.4 width=35.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=18 innerRadius=17.7 height=36 width=36
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=18.2 innerRadius=18 height=36.4 width=36.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=18.5 innerRadius=18.2 height=37 width=37
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=18.8 innerRadius=18.5 height=37.6 width=37.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=19 innerRadius=18.8 height=38 width=38
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=19.3 innerRadius=19 height=38.6 width=38.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=19.6 innerRadius=19.3 height=39.2 width=39.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=19.8 innerRadius=19.6 height=39.6 width=39.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=20.1 innerRadius=19.8 height=40.2 width=40.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=20.3 innerRadius=20.1 height=40.6 width=40.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=20.6 innerRadius=20.3 height=41.2 width=41.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=20.8 innerRadius=20.6 height=41.6 width=41.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=21.1 innerRadius=20.8 height=42.2 width=42.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=21.3 innerRadius=21.1 height=42.6 width=42.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=21.5 innerRadius=21.3 height=43 width=43
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=21.8 innerRadius=21.5 height=43.6 width=43.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=22 innerRadius=21.8 height=44 width=44
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=22.2 innerRadius=22 height=44.4 width=44.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=22.4 innerRadius=22.2 height=44.8 width=44.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=22.7 innerRadius=22.4 height=45.4 width=45.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=22.9 innerRadius=22.7 height=45.8 width=45.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=23.1 innerRadius=22.9 height=46.2 width=46.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=23.3 innerRadius=23.1 height=46.6 width=46.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=23.5 innerRadius=23.3 height=47 width=47
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=23.8 innerRadius=23.5 height=47.6 width=47.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=24 innerRadius=23.8 height=48 width=48
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=24.2 innerRadius=24 height=48.4 width=48.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=24.4 innerRadius=24.2 height=48.8 width=48.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=24.6 innerRadius=24.4 height=49.2 width=49.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=24.8 innerRadius=24.6 height=49.6 width=49.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=25 innerRadius=24.8 height=50 width=50
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=25.2 innerRadius=25 height=50.4 width=50.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=25.4 innerRadius=25.2 height=50.8 width=50.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=25.6 innerRadius=25.4 height=51.2 width=51.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=25.8 innerRadius=25.6 height=51.6 width=51.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=26 innerRadius=25.8 height=52 width=52
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=26.2 innerRadius=26 height=52.4 width=52.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=26.4 innerRadius=26.2 height=52.8 width=52.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=26.6 innerRadius=26.4 height=53.2 width=53.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=26.7 innerRadius=26.6 height=53.4 width=53.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=26.9 innerRadius=26.7 height=53.8 width=53.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=27.1 innerRadius=26.9 height=54.2 width=54.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=27.3 innerRadius=27.1 height=54.6 width=54.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=27.5 innerRadius=27.3 height=55 width=55
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=27.7 innerRadius=27.5 height=55.4 width=55.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=27.9 innerRadius=27.7 height=55.8 width=55.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=28 innerRadius=27.9 height=56 width=56
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=28.2 innerRadius=28 height=56.4 width=56.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=28.4 innerRadius=28.2 height=56.8 width=56.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=28.6 innerRadius=28.4 height=57.2 width=57.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=28.7 innerRadius=28.6 height=57.4 width=57.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=28.9 innerRadius=28.7 height=57.8 width=57.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=29.1 innerRadius=28.9 height=58.2 width=58.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=29.3 innerRadius=29.1 height=58.6 width=58.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=29.4 innerRadius=29.3 height=58.8 width=58.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=29.6 innerRadius=29.4 height=59.2 width=59.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=29.8 innerRadius=29.6 height=59.6 width=59.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=29.9 innerRadius=29.8 height=59.8 width=59.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=30.1 innerRadius=29.9 height=60.2 width=60.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=30.3 innerRadius=30.1 height=60.6 width=60.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=30.4 innerRadius=30.3 height=60.8 width=60.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=30.6 innerRadius=30.4 height=61.2 width=61.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=30.8 innerRadius=30.6 height=61.6 width=61.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=30.9 innerRadius=30.8 height=61.8 width=61.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=31.1 innerRadius=30.9 height=62.2 width=62.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=31.3 innerRadius=31.1 height=62.6 width=62.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=31.4 innerRadius=31.3 height=62.8 width=62.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=31.6 innerRadius=31.4 height=63.2 width=63.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=31.7 innerRadius=31.6 height=63.4 width=63.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=31.9 innerRadius=31.7 height=63.8 width=63.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=32.1 innerRadius=31.9 height=64.2 width=64.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=32.2 innerRadius=32.1 height=64.4 width=64.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=32.4 innerRadius=32.2 height=64.8 width=64.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=32.5 innerRadius=32.4 height=65 width=65
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=32.7 innerRadius=32.5 height=65.4 width=65.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=32.8 innerRadius=32.7 height=65.6 width=65.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33 innerRadius=32.8 height=66 width=66
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33.1 innerRadius=33 height=66.2 width=66.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33.3 innerRadius=33.1 height=66.6 width=66.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33.4 innerRadius=33.3 height=66.8 width=66.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33.6 innerRadius=33.4 height=67.2 width=67.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33.7 innerRadius=33.6 height=67.4 width=67.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=33.9 innerRadius=33.7 height=67.8 width=67.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34 innerRadius=33.9 height=68 width=68
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34.2 innerRadius=34 height=68.4 width=68.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34.3 innerRadius=34.2 height=68.6 width=68.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34.5 innerRadius=34.3 height=69 width=69
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34.6 innerRadius=34.5 height=69.2 width=69.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34.8 innerRadius=34.6 height=69.6 width=69.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=34.9 innerRadius=34.8 height=69.8 width=69.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.1 innerRadius=34.9 height=70.2 width=70.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.2 innerRadius=35.1 height=70.4 width=70.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.3 innerRadius=35.2 height=70.6 width=70.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.5 innerRadius=35.3 height=71 width=71
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.6 innerRadius=35.5 height=71.2 width=71.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.8 innerRadius=35.6 height=71.6 width=71.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=35.9 innerRadius=35.8 height=71.8 width=71.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36 innerRadius=35.9 height=72 width=72
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36.2 innerRadius=36 height=72.4 width=72.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36.3 innerRadius=36.2 height=72.6 width=72.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36.5 innerRadius=36.3 height=73 width=73
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36.6 innerRadius=36.5 height=73.2 width=73.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36.7 innerRadius=36.6 height=73.4 width=73.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=36.9 innerRadius=36.7 height=73.8 width=73.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37 innerRadius=36.9 height=74 width=74
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37.1 innerRadius=37 height=74.2 width=74.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37.3 innerRadius=37.1 height=74.6 width=74.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37.4 innerRadius=37.3 height=74.8 width=74.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37.6 innerRadius=37.4 height=75.2 width=75.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37.7 innerRadius=37.6 height=75.4 width=75.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=37.8 innerRadius=37.7 height=75.6 width=75.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38 innerRadius=37.8 height=76 width=76
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.1 innerRadius=38 height=76.2 width=76.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.2 innerRadius=38.1 height=76.4 width=76.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.3 innerRadius=38.2 height=76.6 width=76.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.5 innerRadius=38.3 height=77 width=77
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.6 innerRadius=38.5 height=77.2 width=77.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.7 innerRadius=38.6 height=77.4 width=77.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=38.9 innerRadius=38.7 height=77.8 width=77.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39 innerRadius=38.9 height=78 width=78
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.1 innerRadius=39 height=78.2 width=78.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.3 innerRadius=39.1 height=78.6 width=78.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.4 innerRadius=39.3 height=78.8 width=78.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.5 innerRadius=39.4 height=79 width=79
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.6 innerRadius=39.5 height=79.2 width=79.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.8 innerRadius=39.6 height=79.6 width=79.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=39.9 innerRadius=39.8 height=79.8 width=79.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40 innerRadius=39.9 height=80 width=80
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.1 innerRadius=40 height=80.2 width=80.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.3 innerRadius=40.1 height=80.6 width=80.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.4 innerRadius=40.3 height=80.8 width=80.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.5 innerRadius=40.4 height=81 width=81
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.6 innerRadius=40.5 height=81.2 width=81.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.8 innerRadius=40.6 height=81.6 width=81.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=40.9 innerRadius=40.8 height=81.8 width=81.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41 innerRadius=40.9 height=82 width=82
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.1 innerRadius=41 height=82.2 width=82.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.3 innerRadius=41.1 height=82.6 width=82.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.4 innerRadius=41.3 height=82.8 width=82.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.5 innerRadius=41.4 height=83 width=83
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.6 innerRadius=41.5 height=83.2 width=83.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.7 innerRadius=41.6 height=83.4 width=83.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=41.9 innerRadius=41.7 height=83.8 width=83.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42 innerRadius=41.9 height=84 width=84
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.1 innerRadius=42 height=84.2 width=84.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.2 innerRadius=42.1 height=84.4 width=84.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.3 innerRadius=42.2 height=84.6 width=84.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.5 innerRadius=42.3 height=85 width=85
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.6 innerRadius=42.5 height=85.2 width=85.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.7 innerRadius=42.6 height=85.4 width=85.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.8 innerRadius=42.7 height=85.6 width=85.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=42.9 innerRadius=42.8 height=85.8 width=85.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.1 innerRadius=42.9 height=86.2 width=86.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.2 innerRadius=43.1 height=86.4 width=86.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.3 innerRadius=43.2 height=86.6 width=86.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.4 innerRadius=43.3 height=86.8 width=86.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.5 innerRadius=43.4 height=87 width=87
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.6 innerRadius=43.5 height=87.2 width=87.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.7 innerRadius=43.6 height=87.4 width=87.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=43.9 innerRadius=43.7 height=87.8 width=87.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44 innerRadius=43.9 height=88 width=88
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.1 innerRadius=44 height=88.2 width=88.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.2 innerRadius=44.1 height=88.4 width=88.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.3 innerRadius=44.2 height=88.6 width=88.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.4 innerRadius=44.3 height=88.8 width=88.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.5 innerRadius=44.4 height=89 width=89
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.7 innerRadius=44.5 height=89.4 width=89.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.8 innerRadius=44.7 height=89.6 width=89.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=44.9 innerRadius=44.8 height=89.8 width=89.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45 innerRadius=44.9 height=90 width=90
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.1 innerRadius=45 height=90.2 width=90.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.2 innerRadius=45.1 height=90.4 width=90.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.3 innerRadius=45.2 height=90.6 width=90.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.4 innerRadius=45.3 height=90.8 width=90.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.6 innerRadius=45.4 height=91.2 width=91.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.7 innerRadius=45.6 height=91.4 width=91.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.8 innerRadius=45.7 height=91.6 width=91.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=45.9 innerRadius=45.8 height=91.8 width=91.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46 innerRadius=45.9 height=92 width=92
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.1 innerRadius=46 height=92.2 width=92.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.2 innerRadius=46.1 height=92.4 width=92.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.3 innerRadius=46.2 height=92.6 width=92.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.4 innerRadius=46.3 height=92.8 width=92.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.5 innerRadius=46.4 height=93 width=93
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.6 innerRadius=46.5 height=93.2 width=93.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.8 innerRadius=46.6 height=93.6 width=93.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=46.9 innerRadius=46.8 height=93.8 width=93.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47 innerRadius=46.9 height=94 width=94
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.1 innerRadius=47 height=94.2 width=94.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.2 innerRadius=47.1 height=94.4 width=94.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.3 innerRadius=47.2 height=94.6 width=94.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.4 innerRadius=47.3 height=94.8 width=94.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.5 innerRadius=47.4 height=95 width=95
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.6 innerRadius=47.5 height=95.2 width=95.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.7 innerRadius=47.6 height=95.4 width=95.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.8 innerRadius=47.7 height=95.6 width=95.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=47.9 innerRadius=47.8 height=95.8 width=95.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48 innerRadius=47.9 height=96 width=96
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.1 innerRadius=48 height=96.2 width=96.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.2 innerRadius=48.1 height=96.4 width=96.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.3 innerRadius=48.2 height=96.6 width=96.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.4 innerRadius=48.3 height=96.8 width=96.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.6 innerRadius=48.4 height=97.2 width=97.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.7 innerRadius=48.6 height=97.4 width=97.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.8 innerRadius=48.7 height=97.6 width=97.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=48.9 innerRadius=48.8 height=97.8 width=97.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49 innerRadius=48.9 height=98 width=98
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.1 innerRadius=49 height=98.2 width=98.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.2 innerRadius=49.1 height=98.4 width=98.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.3 innerRadius=49.2 height=98.6 width=98.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.4 innerRadius=49.3 height=98.8 width=98.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.5 innerRadius=49.4 height=99 width=99
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.6 innerRadius=49.5 height=99.2 width=99.2
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.7 innerRadius=49.6 height=99.4 width=99.4
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.8 innerRadius=49.7 height=99.6 width=99.6
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=49.9 innerRadius=49.8 height=99.8 width=99.8
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+detector     Det           radius=50 innerRadius=49.9 height=100 width=100
+                           length=158 maxStep=100 material=lXe birks=0
+                           color=1,0,0 solid= noSingles=0 format=ASCII
+                           filename= file= require= referenceParticle=0
+                           coordinates=Local coord=Local kill=0 perTrack=0
+place   Det     copies=1 x=0.0 y=0.0 z=1000.0 rename='Det#'
+
+World size (before incrementing by 201.357 mm): 100.0 H  100.0 W  2158.0 L
+
+PARAMETERS:
+             KE=10000.0
+              M=0.511
+              P=10000.511
+            Zcl=1079
+     deltaChord=3.0
+deltaIntersection=0.1
+   deltaOneStep=0.01
+         epsMax=0.05
+         epsMin=2.5e-7
+ eventTimeLimit=30
+    fieldVoxels=200,200,200
+      histoFile=g4beamline
+    histoUpdate=0
+        maxStep=100.0
+        minStep=0.01
+ steppingFormat=N GLOBAL CL KE STEP VOL PROCESS
+steppingVerbose=0
+         viewer=best,1
+ wallClockLimit=-1
+  worldMaterial=Vacuum
+     zTolerance=2.0
+Checking overlaps for volume Det1:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det1 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det2:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det2 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det3:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det3 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det4:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det4 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det5:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det5 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det6:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det6 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det7:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det7 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det8:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det8 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det9:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det9 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det10:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det10 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det11:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det11 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det12:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det12 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det13:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det13 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det14:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det14 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det15:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det15 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det16:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det16 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det17:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det17 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det18:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det18 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det19:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det19 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det20:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det20 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det21:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det21 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det22:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det22 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det23:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det23 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det24:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det24 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det25:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det25 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det26:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det26 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det27:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det27 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det28:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det28 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det29:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det29 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det30:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det30 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det31:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det31 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det32:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det32 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det33:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det33 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det34:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det34 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det35:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det35 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det36:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det36 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det37:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det37 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det38:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det38 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det39:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det39 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det40:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det40 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det41:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det41 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det42:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det42 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det43:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det43 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det44:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det44 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det45:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det45 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det46:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det46 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det47:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det47 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det48:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det48 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det49:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det49 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det50:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det50 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det51:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det51 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det52:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det52 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det53:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det53 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det54:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det54 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det55:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det55 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det56:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det56 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det57:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det57 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det58:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det58 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det59:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det59 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det60:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det60 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det61:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det61 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det62:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det62 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det63:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det63 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det64:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det64 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det65:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det65 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det66:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det66 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det67:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det67 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det68:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det68 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det69:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det69 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det70:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det70 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det71:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det71 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det72:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det72 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det73:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det73 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det74:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det74 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det75:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det75 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det76:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det76 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det77:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det77 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det78:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det78 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det79:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det79 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det80:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det80 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det81:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det81 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det82:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det82 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det83:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det83 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det84:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det84 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det85:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det85 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det86:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det86 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det87:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det87 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det88:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det88 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det89:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det89 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det90:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det90 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det91:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det91 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det92:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det92 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det93:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det93 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det94:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det94 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det95:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det95 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det96:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det96 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det97:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det97 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det98:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det98 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det99:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det99 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det100:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det100 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det101:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det101 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det102:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det102 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det103:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det103 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det104:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det104 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det105:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det105 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det106:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det106 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det107:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det107 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det108:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det108 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det109:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det109 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det110:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det110 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det111:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det111 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det112:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det112 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det113:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det113 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det114:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det114 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det115:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det115 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det116:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det116 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det117:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det117 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det118:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det118 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det119:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det119 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det120:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det120 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det121:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det121 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det122:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det122 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det123:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det123 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det124:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det124 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det125:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det125 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det126:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det126 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det127:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det127 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det128:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det128 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det129:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det129 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det130:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det130 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det131:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det131 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det132:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det132 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det133:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det133 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det134:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det134 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det135:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det135 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det136:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det136 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det137:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det137 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det138:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det138 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det139:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det139 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det140:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det140 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det141:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det141 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det142:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det142 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det143:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det143 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det144:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det144 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det145:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det145 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det146:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det146 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det147:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det147 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det148:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det148 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det149:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det149 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det150:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det150 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det151:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det151 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det152:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det152 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det153:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det153 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det154:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det154 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det155:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det155 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det156:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det156 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det157:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det157 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det158:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det158 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det159:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det159 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det160:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det160 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det161:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det161 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det162:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det162 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det163:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det163 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det164:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det164 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det165:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det165 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det166:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det166 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det167:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det167 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det168:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det168 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det169:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det169 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det170:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det170 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det171:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det171 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det172:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det172 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det173:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det173 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det174:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det174 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det175:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det175 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det176:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det176 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det177:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det177 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det178:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det178 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det179:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det179 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det180:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det180 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det181:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det181 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det182:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det182 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det183:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det183 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det184:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det184 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det185:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det185 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det186:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det186 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det187:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det187 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det188:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det188 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det189:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det189 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det190:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det190 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det191:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det191 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det192:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det192 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det193:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det193 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det194:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det194 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det195:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det195 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det196:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det196 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det197:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det197 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det198:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det198 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det199:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det199 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det200:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det200 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det201:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det201 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det202:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det202 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det203:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det203 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det204:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det204 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det205:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det205 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det206:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det206 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det207:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det207 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det208:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det208 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det209:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det209 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det210:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det210 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det211:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det211 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det212:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det212 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det213:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det213 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det214:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det214 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det215:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det215 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det216:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det216 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det217:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det217 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det218:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det218 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det219:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det219 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det220:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det220 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det221:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det221 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det222:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det222 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det223:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det223 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det224:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det224 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det225:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det225 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det226:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det226 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det227:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det227 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det228:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det228 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det229:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det229 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det230:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det230 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det231:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det231 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det232:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det232 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det233:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det233 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det234:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det234 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det235:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det235 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det236:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det236 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det237:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det237 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det238:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det238 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det239:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det239 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det240:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det240 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det241:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det241 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det242:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det242 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det243:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det243 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det244:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det244 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det245:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det245 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det246:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det246 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det247:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det247 parent= relZ=1000.0 globZ=1000.0
+Checking overlaps for volume Det248:0 (G4Tubs) ... OK! 
+BLCMDdetector::Construct Det248 parent= relZ=1000.0 globZ=1000.0
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+
+Geometry test nPoints=100 tolerance=0.002 mm:
+Testing geometry for children of group 'World':
+Total geometry errors = 0  0 seconds
+
+================== Prepare Visualization ==================
+Stochastic processes are enabled.
+Available UI session types: [ Qt, tcsh, csh ]
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  Qt3D (Qt3D)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+
+Selected visualization viewer: Qt
+BLVisManager init: /vis/open OGLSQt
+BLVisManager init: /vis/viewer/set/auxiliaryEdge true
+BLVisManager init: /vis/viewer/set/style surface
+BLVisManager init: /vis/viewer/set/viewpointThetaPhi 0 0 deg
+BLVisManager init: /vis/drawVolume
+BLVisManager init: /tracking/storeTrajectory 1
+BLVisManager init: /vis/scene/add/trajectories
+/tracking/storeTrajectory 1
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4Trajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4TrajectoryPoint:
+  Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+BLVisManager init: /vis/scene/endOfEventAction accumulate -1
+WARNING: The vis manager will keep an unlimited number of events.
+  This may use a lot of memory.
+  It may be changed with, e.g., "/vis/scene/endOfEventAction accumulate 10".
+BLVisManager init: /vis/viewer/set/hiddenMarker true
+
+WARNING: No extent set for user vis action "DrawMarkers".
+WARNING: User Vis Action "DrawMarkers" extent is null.
+ Changing export format to "jpg"
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+1 event has been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+1 event has been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Change the up vector or "/vis/viewer/set/rotationStyle freeRotation".
+10 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.

@@ -1,0 +1,23 @@
+#	Lxe_Test.g4bl - 8 GeV electron beam bunch into a liquid xenon target
+/global/fieldMgr/eventTimeLimit 10000 s
+
+# The "default" physics list is QGSP_BERT
+physics QGSP
+
+# the beam is 10 GeV kinetic energy, the mass of an electron is 0.511 MeV/c^2
+param M=0.511 KE=10000.0
+param P=sqrt(($M+$KE)*($M+$KE)-$M*$M)
+
+# zero-emittance beam is unrealistic, but simple; it easily fits through
+# a 1 mm hole in the backward detector. It emanates from z=0.
+beam gaussian meanMomentum=$P nEvents=1000 particle=e- sigmaX=6.0 sigmaY=6.0 sigmaXp=0.000100 sigmaYp=0.000100 meanMomentum=$P 
+
+
+
+  
+
+detector Det width=100 height=100 length=160 material=lXe color=1,0,0 format=ASCII 
+
+
+place Det z=1000.0 rename=Det#
+
