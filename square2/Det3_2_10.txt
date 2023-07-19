@@ -1,0 +1,2 @@
+# Det3_2_10
+#x y z Px Py Pz t PDGid EventID TrackID ParentID Weight Edep VisibleEdep Ntracks
